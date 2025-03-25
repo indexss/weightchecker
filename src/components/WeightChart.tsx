@@ -108,7 +108,7 @@ export default function WeightChart({ records, height = 'h-64' }: WeightChartPro
         borderColor: 'rgb(59, 130, 246)',
         backgroundColor: 'rgba(59, 130, 246, 0.5)',
         tension: 0.3,
-        pointRadius: (ctx) => {
+        pointRadius: (ctx: any) => {
           // 如果不显示数据点，除了最后一天(今天)外，其他都不显示
           if (!showDataPoints) {
             const index = ctx.dataIndex;
